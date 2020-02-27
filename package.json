@@ -1,0 +1,28 @@
+{
+  "name": "grappler",
+  "version": "1.0.0",
+  "description": "web scraper",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafh/web-scrapper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "rafael.heard@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafh/web-scrapper/issues"
+  },
+  "homepage": "https://github.com/rafh/web-scrapper#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "inquirer": "^7.0.4"
+  }
+}
