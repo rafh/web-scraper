@@ -1,4 +1,5 @@
-const axios = require('axios')
+const axios = require('axios');
+const open = require('open');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -58,6 +59,7 @@ inquirer.prompt(questions).then(answers => {
 			</script>`
 			)
 		}
+		open('./index.html');
 	})
 	.catch((error) => {
 		console.log(error.code)
