@@ -24,6 +24,7 @@ inquirer.prompt(questions).then(answers => {
 	axios
 	.get(url)
 	.then((response) => {
+		console.log(response)
 		if (response.status === 200) {
 			const $ = cheerio.load(response.data);
 
@@ -62,7 +63,6 @@ inquirer.prompt(questions).then(answers => {
 		open('./index.html');
 	})
 	.catch((error) => {
-		console.log(error.code)
 		let errorMsg = 'Something went awry...';
 		if (error.code === 'ENOTFOUND') {
 			errorMsg = 'Not found...';
